@@ -52,7 +52,7 @@ public class MainServer extends AbstractHandler {
         String port = arguments.get("p");
 
         if (port == null || !port.matches("\\d+")) {
-            port = "8081";
+            port = "80";
         }
 
         Server server = new Server(Integer.parseInt(port));
